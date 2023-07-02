@@ -1,0 +1,119 @@
+@media screen and (min-width: 550px) {
+    header {
+        background-image: url("../images/Header\ Background.png");
+        align-items: center;
+        height: 25rem;
+    }
+
+    header > h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    header > p {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    header > .buttons_header {
+        flex-direction: row;
+    }
+
+    header > .buttons_header > button {
+        padding: 1rem;
+    }
+
+    header > .buttons_header > .btn_open_discord {
+        margin-bottom: 0;
+    }
+
+    .section_1 {
+        display: grid;
+        grid: "img title" 0.8fr
+        "img text" 0.15fr
+        / 60% 35%
+    }
+
+    .section_1 > img {
+        grid-area: img;
+        justify-self: end;
+        align-self: center;
+        width: 75%;
+    }
+
+    .section_1 > h2 {
+        font-size: 3rem;
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .section_1 > p {
+        grid-area: text;
+    }
+
+    .section_2 {
+        display: grid;
+        grid: "title img" 0.8fr
+        "text img" 0.15fr
+        / 35% 60%
+    }
+
+    .section_2 > img {
+        grid-area: img;
+        justify-self: start;
+        align-self: center;
+        width: 75%;
+    }
+
+    .section_2 > h2 {
+        font-size: 3rem;
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+        text-align: c;
+    }
+
+    .section_2 > p {
+        grid-area: text;
+    }
+
+    .section_3 {
+        display: grid;
+        grid: "img title" 0.8fr
+        "img text" 0.15fr
+        / 60% 35%
+    }
+
+    .section_3 > img {
+        grid-area: img;
+        justify-self: end;
+        align-self: center;
+        width: 75%;
+    }
+
+    .section_3 > h2 {
+        font-size: 3rem;
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .section_3 > p {
+        grid-area: text;
+    }
+
+    .section_4 {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section_4 > p {
+        width: 65%;
+        text-align: center;
+    }
+
+    .section_4 > img {
+        width: 50%;
+    }
+}

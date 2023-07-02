@@ -1,0 +1,95 @@
+@import url('./global.css');
+
+header {
+    background-image: url("../images/Header\ Background\ -\ Mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    padding: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+header > h1 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+header > p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header > .buttons_header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+header > .buttons_header > button {
+    padding: 1rem 0;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+}
+
+header > .buttons_header > .btn_open_discord {
+    background-color: #23272A;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.section_1 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-family: 'Open Sans';
+}
+
+.section_2 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-family: 'Open Sans';
+    background-color: #F6F6F6;
+}
+
+.section_3 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-family: 'Open Sans';
+}
+
+.section_4 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-family: 'Open Sans';
+    background-color: #F6F6F6;
+}
+
+.section_4 > h2 {
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 0.05rem;
+    font-size: 1.8rem;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 2.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
