@@ -9,7 +9,7 @@ header{
   background-image: url('../images/header-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1280px;
+  max-width: 1280px;
   height: 505px;
   display: flex;
   flex-direction: column;
