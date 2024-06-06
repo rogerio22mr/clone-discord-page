@@ -9,12 +9,14 @@ header{
   background-image: url('../images/header-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1280px;
   height: 505px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 24px;
   gap: 24px;
+  align-self: center;
 }
 
 header > h1 {
