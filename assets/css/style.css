@@ -1,95 +1,174 @@
 @import url('./global.css');
 
-header {
-    background-image: url("../images/Header\ Background\ -\ Mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-    padding: 1.7rem;
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-    display: flex;
-    flex-direction: column;
-    gap: 1.7rem;
+header{
+  background-image: url('../images/header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 24px;
 }
 
 header > h1 {
-    color: white;
-    font-family: 'Luckiest Guy', cursive;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 2rem;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  font-size: 2rem;
+  width: 278px;
 }
 
 header > p {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  color: white;
 }
 
-header > .buttons_header {
-    display: flex;
-    flex-direction: column;
-    gap: 1.7rem;
+.group-buttons {
+  align-self: center;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-header > .buttons_header > button {
-    padding: 1rem 0;
-    border-radius: 2rem;
-    border: none;
-    font-size: 1rem;
+.button {
+  width: 381px;
+  height: 54px;
+  border-radius: 28px;
 }
 
-header > .buttons_header > .btn_open_discord {
-    background-color: #23272A;
-    color: white;
-    margin-bottom: 3rem;
+.download-app {
+  background-color: white;
+  color: black;
 }
 
-.section_1 {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    font-family: 'Open Sans';
+.open-discord {
+  background-color: black;
+  color: white;
 }
 
-.section_2 {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    font-family: 'Open Sans';
-    background-color: #F6F6F6;
+.content {
+  padding: 40px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 27px;
 }
 
-.section_3 {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    font-family: 'Open Sans';
+.content-bg-grey {
+  background-color: #F6F6F6;
 }
 
-.section_4 {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    font-family: 'Open Sans';
-    background-color: #F6F6F6;
+.content picture {
+  width: 379px;
+  height: 252px;
 }
 
-.section_4 > h2 {
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 0.05rem;
-    font-size: 1.8rem;
+.content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 27px;
+}
+
+.content-description > h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 370px;
+  color: #23272A;
+}
+
+.content-description > p {
+  width: 378px;
+}
+
+#content-2 {
+  flex-direction: row-reverse;
+}
+
+#ultimo-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+#ultimo-content h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 footer {
-    background-color: #23272A;
-    padding: 2.5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  background-color: #23272A;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  header{
+    background-image: url('../images/header-web.png');
+    background-size: contain;
+  }
+
+  header > h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    width: 313px;
+    text-align: center;
+  }
+
+  header > p {
+    align-self: center;
+    text-align: center;
+    width: 757px;
+  }
+
+  .button {
+    width: max-content;
+    padding: 0 24px;
+    height: 44px;
+  }
+
+  .content picture {
+    width: 607px;
+    height: 394px;
+  }
+
+  .content-description > h1 {
+    font-size: 2.5rem;
+    width: 329px;
+  }
+
+  .content-description > p {
+    width: 348px;
+  }  
+
+  .content {
+    gap: 16px;
+  }
+
+  #ultimo-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 608px;
+  }
+
+  #ultimo-content p {
+    width: 802px;
+    text-align: center;
+  }
+
+  #ultimo-content picture {
+    width: 784px;
+    height: 508px;
+  }
+  
 }
